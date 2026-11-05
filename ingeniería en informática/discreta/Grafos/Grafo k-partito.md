@@ -10,10 +10,18 @@ vinculoFacultad:
     capitulo: 8
     materia: Matemática discreta
     carrera: Ingeniería en informática
+etapa: empezado
+referencias: []
 ---
+```dataviewjs
+	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa })
+```
 # Definición
 ---
-Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], se define $G$ como $k$-partito si $V(G)$ es una [[Partición|partición]], es decir $$ V(G) = \bigcup_{i = 1}^{k} V_i ~~~~ \bigcap_{i = 1}^{k} V_i = \emptyset $$ tal que si $uv \in E(G)$, entonces $u$, $v$ no pertenecen ambos al mismo $V_i$
+Sea $G = \big( V(G),~E(G),~\Psi_G \big)$ un [[Grafo|grafo]], se define $G$ como $k$-partito si $V(G)$ es una [[Partición|partición]], es decir $$ \begin{gather}
+	V(G) = \bigcup_{i = 1}^{k} V_i &&
+	\bigcap_{i = 1}^{k} V_i = \emptyset
+\end{gather} $$ tal que si $uv \in E(G)$, entonces $u$, $v$ no pertenecen ambos al mismo $V_i$
 
 El $k$-partito se llama completo si está saturado de aristas permitidas. Estos pueden ser denotados según el tamaño de sus conjuntos, con $K_{n,~m,~\cdots}$
 
