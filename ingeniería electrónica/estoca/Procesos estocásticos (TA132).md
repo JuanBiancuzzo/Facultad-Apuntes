@@ -22,11 +22,28 @@ referencias:
   - "1004"
 pathCarrera: "[[ingeniería electrónica/Ingeniería electrónica.md]]"
 nombreCarrera: Ingeniería electrónica
+evaluaciones: []
+guias: [] 
 ---
 # Apuntes
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
+```
+
+## Resumen
+---
+ 
+# Guías
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/guiasAcumuladas", { archivo: dv.current() });
+```
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
 ```
 
 # Bibliografía
