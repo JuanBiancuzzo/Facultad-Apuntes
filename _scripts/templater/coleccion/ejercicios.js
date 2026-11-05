@@ -61,7 +61,7 @@ class Evaluacion {
         let generarNuevoEjercicio = () => {
             let numero = this.seguidorEjercicios.conseguirNumero();
             let ejercicio = new Ejercicio(tp, dv, {
-                [DATOS_EJERCICIOS.etapa]: ETAPAS.sinEmpezar,
+                [DATOS_EJERCICIOS.etapa]: ETAPAS.empezado,
                 [DATOS_EJERCICIOS.numero]: numero,
                 [DATOS_EJERCICIOS.conResultado]: false,
             });
@@ -487,8 +487,8 @@ class Ejercicio {
         this.config = DATOS_EJERCICIOS;
 
         this.nombre = representacionPrevia[this.config.ejercicio.nombre];
-        this.etapa = representacionPrevia[this.config.etapa]
-            ? representacionPrevia[this.config.etapa]
+        this.etapa = representacionPrevia[this.config.ejercicio.etapa]
+            ? representacionPrevia[this.config.ejercicio.etapa]
             : this.etapas.sinEmpezar;
         this.conResultado = representacionPrevia[this.config.ejercicio.conResultado];
 
@@ -561,18 +561,16 @@ class Ejercicio {
     }
 
     generarRepresentacion() {
+        let representacion = {
+            [this.config.ejercicio.numero]: this.numero,
+            [this.config.ejercicio.etapa]: this.etapa,
+        };
+
         if (this.nombre) {
-            return {
-                [this.config.ejercicio.numero]: this.numero,
-                [this.config.ejercicio.nombre]: this.nombre,
-                [this.config.ejercicio.etapa]: this.etapa,
-            }
-        } else {
-            return {
-                [this.config.ejercicio.numero]: this.numero,
-                [this.config.ejercicio.etapa]: this.etapa,
-            }
+            representacion[this.config.ejercicio.nombre] = this.nombre;
         }
+
+        return representacion;
     }
 
     async describir(tp, dv) {
