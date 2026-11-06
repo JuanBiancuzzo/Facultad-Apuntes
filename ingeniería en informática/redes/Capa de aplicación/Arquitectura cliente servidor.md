@@ -32,3 +32,13 @@ Denotemos $u_s$ la tasa de subida del servidor, $u_i$ la taza de subida del clie
 
 El tiempo mínimo será la máxima entre el tiempo de subida máximo del servidor a todos los clientes, y el tiempo de descarga mínimo de los clientes $$ DCS = \max \set{ N ~ F ~u_s, F ~ d_{min} } $$
 El tiempo de distribución aumenta linealmente con el número de clientes
+
+## Representación con red de Petri
+---
+A la arquitectura se la puede representar, en su funcionalidad más [[ingeniería en informática/sisop/Concurrencia/Concurrencia|concurrente]] con una [[ingeniería en informática/concurrentes/Redes de Petri/Red de Petri#General|red de Petri]] 
+
+![[ingeniería en informática/redes/Capa de aplicación/img/Red de Petri - Cliente Servidor.png|500]]
+
+Donde podemos identificar $p_1$, $p_2$ y $p_3$ como los estados de posible cliente, esperando mensaje y  respuesta obtenida, respectivamente. Por el otro lado, $p_6$, $p_7$ y $p_8$ como esperando cliente, computando respuesta, liberando recursos, respectivamente
+
+Tanto $p_4$ como $p_5$ representan un mensaje pendiente pero en el primer caso siendo un mensaje pendiente del cliente hacía el servidor y en el segundo un mensaje del servidor al cliente

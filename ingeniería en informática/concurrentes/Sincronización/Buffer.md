@@ -49,6 +49,12 @@ def recibir() -> d:
 	return d
 ```
 
+Su representación por una [[ingeniería en informática/concurrentes/Redes de Petri/Red de Petri#General|red de Petri]] sería
+
+![[ingeniería en informática/concurrentes/Sincronización/img/Red de Petri - Buffer Infinito.png|500]]
+
+Donde se puede entender $p_5$ el evento de que existe un mensaje para procesar
+
 ## Buffer acotado
 ---
 De forma similar al infinito, se utiliza $2$ semáforos para lograr resolver el problema de intentar envía en un buffer lleno
@@ -71,3 +77,9 @@ def recibir() -> d:
 	self.notFull.signal()
 	return d
 ```
+
+Su representación por una red de Petri sería
+
+![[ingeniería en informática/concurrentes/Sincronización/img/Red de Petri - Buffer acotado.png|500]]
+
+Donde $p_5$ mantiene la funcionalidad que tiene en el buffer infinito, y $p_6$ toma el rol de contabilizar la capacidad del buffer

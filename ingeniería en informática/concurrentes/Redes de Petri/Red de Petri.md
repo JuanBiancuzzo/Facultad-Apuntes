@@ -23,16 +23,18 @@ vinculoFacultad:
 ---
 Permite representar, de una forma más formal, a partir de un [[ingeniería en informática/discreta/Grafos/Grafo|grafo]] donde los [[ingeniería electrónica/intro/Circuitos con resistencias/Nodo|nodos]] representan estados y las [[Arista|aristas]] las transiciones, como por ejemplo los siguientes casos
 
-| Lugar de entrada   | Transiciones             | Lugar de salida   |
-| ------------------ | ------------------------ | ----------------- |
-| Precondiciones     | Eventos                  | PostCondiciones   |
-| Datos de entrada   | Cómputos                 | Datos de salida   |
+|  Lugar de entrada  |       Transiciones       |  Lugar de salida  |
+| :----------------: | :----------------------: | :---------------: |
+|   Precondiciones   |         Eventos          |  PostCondiciones  |
+|  Datos de entrada  |         Cómputos         |  Datos de salida  |
 | Señales de entrada | Procesamiento de señales | Señales de salida |
-| Buffers de entrada | Procesador               | Buffers de salida |
+| Buffers de entrada |        Procesador        | Buffers de salida |
 
 ## Ordinaria
 ---
 Es un [[ingeniería en informática/discreta/Grafos/Grafo k-partito|grafo bipartito]] que cumple con $$ \text{PN} = (T,~ P,~ A) $$ donde $T$ es el [[ingeniería en informática/algebra 2/Espacios Vectoriales/Conjunto|conjunto]] de nodos llamado transiciones, $P$ es el conjunto de nodos llamado lugres y $A$ son las aristas dado por $A \subseteq (T \times P) \bigcup (P \times T)$ 
+
+![[ingeniería en informática/concurrentes/Redes de Petri/img/Red Ordinaria de Petri.png|500]]
 
 Sea $t \in \text{PN}$ una transición, se definen las funciones
 * Entrada o input de la transición $t$ dado por $I(t) = \Set{ \forall p \in P : (p,~ t) \in A }$
@@ -54,7 +56,10 @@ Tanto $M$ como $W$ se complementan para dar la funcionalidad de disparo de trans
 	* $\forall p \in I(t) : M(p) \gets M(p) - W(p,~ t)$  
 	* $\forall p \in O(t) : M(p) \gets M(p) + W(p,~ t)$  
 
+![[ingeniería en informática/concurrentes/Redes de Petri/img/Red General de Petri.png|500]]
+
 ## Grafo de alcance
 ---
 El grafo de alcance se define tal que sus nodos sean el conjunto ordenado de marcas y sus aristas son las transiciones
 
+![[ingeniería en informática/concurrentes/Redes de Petri/img/Grafo de Alcance de red de Petri.png|500]]
