@@ -8,6 +8,9 @@ aliases:
   - Lock de escritura#^lock-escritura
   - Exclusive lock#^lock-escritura
   - Mutex#^lock-escritura
+  - Algoritmo de exclusión mutua centralizada#Algoritmo centralizado
+  - Algoritmo de exclusión mutua descentralizada#Algoritmo descentralizado
+  - Algoritmo Token Ring#Token Ring
 tags:
   - carrera/ingeniería-en-informática/sisop/Concurrencia
   - nota/facultad
@@ -40,6 +43,45 @@ Existen $2$ tipos de locks
 * Locks de escritura, exclusive locks o mutex ^lock-escritura
 	* Sólo un proceso a la vez puede tener cualquier tipo de lock
 	* Para poder tomar un exclusive lock, el proceso debe esperar hasta que sean liberados todos los locks 
+
+## Implementación distribuida
+---
+En un [[ingeniería en informática/distribuidos/Introduccion/Sistema distribuido|sistema distribuido]], se puede implementar la exclusión mutua donde se utiliza un coordinador por lo que centraliza la decisión, o entre todos los nodos toman la decisión de forma distribuida
+
+### Algoritmo centralizado
+---
+Para este algoritmo, se necesita inicialmente [[Algoritmo de elección de Lider|elige un coordinador]], el cual va a ser el que centraliza la decisión
+
+Cuando un proceso quiere entrar a la [[ingeniería en informática/concurrentes/Sincronización/Sección critica|sección critica]], envía un mensaje al coordinador. El coordinador recibe el mensaje y decide según el caso
+1. Si no hay ningún otro proceso en la sección critica, le envía `Ok` para poder entrar 
+2. Si hay algún otro proceso en la sección critica, le enviar un `NoDisponible` o simplemente no enviar nada para que bloquee la respuesta
+
+### Algoritmo descentralizado
+---
+El algoritmo descentralizado lo podemos plantear de $2$ formas distintas, con la relación de compromiso de la cantidad de conexiones y la simplicidad
+
+#### Completo
+---
+En el lado más simple está una conexión completa entre los nodos, donde todos tienen que estar conectados entre sí 
+
+Cuando un proceso quiere entrar a la sección critica, construye un mensaje con el nombre de la sección crítica, el identificador del proceso y un timestamp 
+
+Los otros procesos cuando reciben este mensajes y decide que envíar según el caso
+1. Si no está en la sección critica y no quiere entrar a esta, envía `Ok`, notificando que este proceso no tiene problema con que el otro proceso entre a la sección critica
+2. Si no está en la sección critica, pero quiere entrar, compara con el timestamp
+	1. Si es menor su propio timestamp, entonces cae en el caso siguiente
+	2. Si es mayor envía `Ok` y luego empieza todo este proceso desde el inicio
+3. Si está en la sección critica, envía `NoDisponible` o simplemente no enviar nada para que bloquee la respuesta, y cuando sale de la sección critica envía el `Ok`
+
+Finalmente, cuando recibe el `Ok` de todos, entra a la sección critica
+
+#### Token Ring
+---
+Por el otro lado, tenemos una menor cantidad de conexiones ya que se conforma un anillo, por lo que independientemente de la cantidad de nodos, cada uno solo necesita mantener $2$ conexiones punto a punto
+
+Al iniciar el proceso $0$ recibe un token que va circulando por el anillo. Sólo el proceso que tiene el token puede entrar a la sección critica
+
+Por lo tanto, si un proceso quiere entrar, espera a recibir el token y lo mantiene hasta salir de la sección critica. Para evitar [[ingeniería en informática/sisop/Concurrencia/Deadlock|deadlocks]], el proceso no puede entrar a otra sección critica con el mismo token
 
 ### Lock y unlock en C
 ---
