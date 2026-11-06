@@ -19,6 +19,10 @@ vinculoFacultad:
     capitulo: 2
     materia: Redes
     carrera: Ingeniería en informática
+  - tema: Sockets
+    capitulo: 9
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
 ---
 # Definición
 ---

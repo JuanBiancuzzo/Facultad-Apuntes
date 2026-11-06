@@ -12,6 +12,10 @@ vinculoFacultad:
     capitulo: 1
     materia: Sistemas Distribuidos 1
     carrera: Ingeniería en informática
+  - tema: Sockets
+    capitulo: 9
+    materia: Programación Concurrente
+    carrera: Ingeniería en informática
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/notas/etapa", { etapa: dv.current()?.etapa });
