@@ -8,6 +8,8 @@ materiaResumen: ingeniería en informática/concurrentes/Programación Concurren
 infoTemaMateria:
   materia: Programación Concurrente
   carrera: Ingeniería en informática
+referencias:
+  - "1288"
 ---
 # Índice
 ---

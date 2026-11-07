@@ -50,7 +50,7 @@ En un [[ingeniería en informática/distribuidos/Introduccion/Sistema distribuid
 
 ### Algoritmo centralizado
 ---
-Para este algoritmo, se necesita inicialmente [[Algoritmo de elección de Lider|elige un coordinador]], el cual va a ser el que centraliza la decisión
+Para este algoritmo, se necesita inicialmente [[ingeniería en informática/concurrentes/Elección de líder/Algoritmo de elección de Líder|elige un coordinador]], el cual va a ser el que centraliza la decisión
 
 Cuando un proceso quiere entrar a la [[ingeniería en informática/concurrentes/Sincronización/Sección critica|sección critica]], envía un mensaje al coordinador. El coordinador recibe el mensaje y decide según el caso
 1. Si no hay ningún otro proceso en la sección critica, le envía `Ok` para poder entrar 

@@ -9,7 +9,7 @@ nombre: Elección de Líder y Ambientes Distribuidos
 ---
 # Enunciado
 ---
-1. Describir el [[Algoritmo Ring de elección de Lider|algoritmo Ring]] para la [[Algoritmo de elección de Lider|elección de líder en un ambiente distribuido]] ^parte-1
+1. Describir el [[ingeniería en informática/concurrentes/Elección de líder/Algoritmo Ring de elección de Líder|algoritmo Ring]] para la [[ingeniería en informática/concurrentes/Elección de líder/Algoritmo de elección de Líder|elección de líder en un ambiente distribuido]] ^parte-1
 2. Realizar un diagrama con un ejemplo de un posible escenario, que muestre todos los pasos de ejecución del algoritmo ^parte-2
 3. Enumerar los tipos de eventos que se consideran en un ambiente distribuido ^parte-3
 4. Explicar qué es la Acción, Regla y Comportamiento de una entidad en un ambiente distribuido ^parte-4

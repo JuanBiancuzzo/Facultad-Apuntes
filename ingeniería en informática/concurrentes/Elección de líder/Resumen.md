@@ -1,13 +1,14 @@
 ---
 capitulo: 10
 tags:
-  - carrera/ingeniería-en-informática/concurrentes/Elección-de-líder
   - facultad/resumen
+  - carrera/ingeniería-en-informática/concurrentes/Elección-de-líder
 nombreResumen: Elección de líder
 materiaResumen: ingeniería en informática/concurrentes/Programación Concurrente (TB026).md
 infoTemaMateria:
   materia: Programación Concurrente
   carrera: Ingeniería en informática
+referencias: []
 ---
 # Índice
 ---

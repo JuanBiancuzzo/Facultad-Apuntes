@@ -13,6 +13,9 @@ aliases:
   - Multicast#^muticast
   - Broadcast#^broadcast
   - Comunicación punto a punto#^unicast
+  - Topología anillo#Anillos
+  - Topología punto a punto#Punto a punto
+  - Topología jerárquica#Grupos jerárquicos
 vinculoFacultad:
   - tema: Herramientas de Diseño
     capitulo: 1
@@ -40,21 +43,20 @@ Existen dos formas de difundir mensajes
 
 ### Uno a uno
 ---
-* Unicast
+* Unicast ^unicast
     * Comunicación punto a punto
-^unicast
-* Anycast
+
+* Anycast ^anycast
     * Uno sólo en el grupo recibe el mensaje
     * Se usa un criterio para encontrar al nodo buscado
-^anycast
+
 ### Uno a muchos
 ---
-* Multicast
+* Multicast ^multicast
     * Sólo aquellos que se encuentran en el grupo reciben el mensaje
-^multicast
-* Broadcast
+
+* Broadcast ^broadcast
     * Todos reciben el mensaje
-^broadcast
 
 ## Topologías
 ---
