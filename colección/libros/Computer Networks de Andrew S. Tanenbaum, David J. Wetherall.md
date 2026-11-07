@@ -20,63 +20,63 @@ url: 978-8177581652
 capitulos:
   - numeroCapitulo: "1"
     nombreCapitulo: Introduction
-    numReferencia: .nan
+    numReferencia: 1289
     editores: []
     paginas:
       inicio: "1"
       final: "88"
   - numeroCapitulo: "2"
     nombreCapitulo: "The physical layer "
-    numReferencia: .nan
+    numReferencia: 1290
     editores: []
     paginas:
       inicio: "89"
       final: "192"
   - numeroCapitulo: "3"
     nombreCapitulo: The data link layer
-    numReferencia: .nan
+    numReferencia: 1291
     editores: []
     paginas:
       inicio: "193"
       final: "256"
   - numeroCapitulo: "4"
     nombreCapitulo: The medium access control sublayer
-    numReferencia: .nan
+    numReferencia: 1292
     editores: []
     paginas:
       inicio: "257"
       final: "354"
   - numeroCapitulo: "5"
     nombreCapitulo: The network layer
-    numReferencia: .nan
+    numReferencia: 1293
     editores: []
     paginas:
       inicio: "355"
       final: "494"
   - numeroCapitulo: "6"
     nombreCapitulo: The transport layer
-    numReferencia: .nan
+    numReferencia: 1294
     editores: []
     paginas:
       inicio: "495"
       final: "610"
   - numeroCapitulo: "7"
     nombreCapitulo: The application layer
-    numReferencia: .nan
+    numReferencia: 1295
     editores: []
     paginas:
       inicio: "611"
       final: "762"
   - numeroCapitulo: "8"
     nombreCapitulo: Network security
-    numReferencia: .nan
+    numReferencia: 1296
     editores: []
     paginas:
       inicio: "763"
       final: "876"
   - numeroCapitulo: "9"
     nombreCapitulo: Reading list and bibliography
-    numReferencia: .nan
+    numReferencia: 1297
     editores: []
     paginas:
       inicio: "877"
