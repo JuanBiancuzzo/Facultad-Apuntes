@@ -4,7 +4,7 @@ nombre: Obligaciones indivisibles
 num: 2
 previo: "[[Sección 6, Obligaciones divisibles e indivisibles|Sección 6, Obligaciones divisibles e indivisibles]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Parágrafo
+  - colección/documentos/Parágrafo
 ---
 # Interpretación
 ---

@@ -5,7 +5,7 @@ grupos:
   - Sección
 artConNombre: true
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 19.550
   - LGS

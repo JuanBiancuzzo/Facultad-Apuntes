@@ -4,7 +4,7 @@ nombre: Parte especial
 num: 3
 previo: "[[Título 4, Disposición de derecho internacional privado|Título 4, Disposición de derecho internacional privado]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 num_capítulo: 3
 capítulo: Parte especial
 listado:

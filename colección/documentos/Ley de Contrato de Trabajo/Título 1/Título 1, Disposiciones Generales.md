@@ -4,7 +4,7 @@ nombre: Disposiciones Generales
 num: 1
 previo: "[[Ley de Contrato de Trabajo|Ley de Contrato de Trabajo]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

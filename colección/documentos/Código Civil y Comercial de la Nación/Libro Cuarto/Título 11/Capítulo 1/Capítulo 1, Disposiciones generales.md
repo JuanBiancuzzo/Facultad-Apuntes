@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Título 11, Servidumbre|Título 11, Servidumbre]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

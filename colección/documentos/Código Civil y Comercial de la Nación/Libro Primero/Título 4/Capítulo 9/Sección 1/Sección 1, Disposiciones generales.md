@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Capítulo 9, Ineficacia de los actos jurídicos|Capítulo 9, Ineficacia de los actos jurídicos]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

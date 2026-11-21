@@ -3,7 +3,7 @@ tipo: Título
 nombre: preliminar
 previo: "[[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 

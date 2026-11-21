@@ -7,7 +7,7 @@ grupos:
   - Capítulo
 artConNombre: false
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 24.430
 ---

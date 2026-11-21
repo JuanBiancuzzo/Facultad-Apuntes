@@ -4,7 +4,7 @@ nombre: Responsabilidad civil
 num: 1
 previo: "[[Título 5, Otras fuentes de las obligaciones|Título 5, Otras fuentes de las obligaciones]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

@@ -4,7 +4,7 @@ nombre: Obligaciones simplemente mancomunadas
 num: 1
 previo: "[[Sección 7, Obligaciones de sujeto plural|Sección 7, Obligaciones de sujeto plural]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Parágrafo
+  - colección/documentos/Parágrafo
 ---
 # Interpretación
 ---

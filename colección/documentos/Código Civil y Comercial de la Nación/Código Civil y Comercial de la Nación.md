@@ -8,7 +8,7 @@ grupos:
   - Parágrafo
 artConNombre: true
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
   - carrera/ingeniería-electrónica/legal/Código-Civil-y-Comercial-de-la-Nación
 aliases:
   - Ley 26.994

@@ -4,7 +4,7 @@ nombre: Señal
 num: 5
 previo: "[[Capítulo 9, Efectos|Capítulo 9, Efectos]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

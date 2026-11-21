@@ -3,7 +3,7 @@ abreviacion: de la Propiedad Intelectual
 grupos: 
 artConNombre: false
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 25.036
 ---

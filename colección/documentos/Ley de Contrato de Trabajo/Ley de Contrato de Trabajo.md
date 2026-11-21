@@ -5,7 +5,7 @@ grupos:
   - Capítulo
 artConNombre: true
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 20.744
 ---

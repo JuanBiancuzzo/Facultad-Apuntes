@@ -4,7 +4,7 @@ nombre: Obligaciones solidarias. Disposiciones generales
 num: 2
 previo: "[[Sección 7, Obligaciones de sujeto plural|Sección 7, Obligaciones de sujeto plural]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Parágrafo
+  - colección/documentos/Parágrafo
 ---
 # Interpretación
 ---

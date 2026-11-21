@@ -4,7 +4,7 @@ nombre: Derechos Reales
 num: 4
 previo: "[[Código Civil y Comercial de la Nación|Código Civil y Comercial de la Nación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Libro
+  - colección/documentos/Libro
   - carrera/ingeniería-electrónica/legal/Derecho-real
 ---
 ```dataviewjs

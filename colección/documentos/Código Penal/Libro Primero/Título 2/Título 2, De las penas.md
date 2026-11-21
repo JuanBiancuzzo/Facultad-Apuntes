@@ -4,7 +4,7 @@ nombre: De las penas
 num: 2
 previo: "[[Libro 1, Disposiciones Generales|Libro 1, Disposiciones Generales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

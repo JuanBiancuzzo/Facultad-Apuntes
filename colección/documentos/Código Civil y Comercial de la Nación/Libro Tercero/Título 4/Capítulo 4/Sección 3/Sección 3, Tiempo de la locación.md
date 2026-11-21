@@ -4,7 +4,7 @@ nombre: Tiempo de la locación
 num: 3
 previo: "[[Capítulo 4, Locación|Capítulo 4, Locación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

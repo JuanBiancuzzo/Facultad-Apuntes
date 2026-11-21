@@ -4,7 +4,7 @@ nombre: Prescripción liberatoria
 num: 2
 previo: "[[Título 1, Prescripción y caducidad|Título 1, Prescripción y caducidad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

@@ -4,7 +4,7 @@ nombre: Gobiernos de provincia
 num: 2
 previo: "[[Parte 2, Autoridades de la nación|Parte 2, Autoridades de la nación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

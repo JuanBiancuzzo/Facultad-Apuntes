@@ -4,7 +4,7 @@ nombre: Sucesiones
 num: 1
 previo: "[[Libro 5, Transmisión de derechos por causa de muerte|Libro 5, Transmisión de derechos por causa de muerte]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

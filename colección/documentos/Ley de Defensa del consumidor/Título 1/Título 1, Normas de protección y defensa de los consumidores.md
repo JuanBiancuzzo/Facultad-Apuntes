@@ -4,7 +4,7 @@ nombre: Normas de protección y defensa de los consumidores
 num: 1
 previo: "[[Ley de Defensa del consumidor|Ley de Defensa del consumidor]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

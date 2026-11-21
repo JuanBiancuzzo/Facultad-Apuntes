@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Título 3, Dominio|Título 3, Dominio]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

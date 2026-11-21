@@ -6,7 +6,7 @@ grupos:
   - Sección
 artConNombre: false
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 24.156
 ---

@@ -4,7 +4,7 @@ nombre: Formación del consentimiento
 num: 2
 previo: "[[Título 3, Contratos de consumo|Título 3, Contratos de consumo]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

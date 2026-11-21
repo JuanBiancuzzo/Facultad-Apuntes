@@ -4,7 +4,7 @@ nombre: Derechos y bienes
 num: 4
 previo: "[[Título preliminar|Título preliminar]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

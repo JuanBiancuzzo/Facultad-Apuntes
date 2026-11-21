@@ -4,7 +4,7 @@ nombre: Obligaciones facultativas
 num: 4
 previo: "[[Capítulo 3, Clases de obligaciones|Capítulo 3, Clases de obligaciones]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 # Interpretación
 ---

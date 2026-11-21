@@ -4,7 +4,7 @@ nombre: Novación
 num: 3
 previo: "[[Capítulo 5, Otros modos de extinción|Capítulo 5, Otros modos de extinción]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 ```dataviewjs
     await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

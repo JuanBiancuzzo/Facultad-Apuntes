@@ -4,7 +4,7 @@ grupos:
   - Parte
 artConNombre: false
 tags:
-  - carrera/ingeniería-electrónica/legal/documento
+  - colección/documentos/documento
 aliases:
   - Ley 11.723
 ---

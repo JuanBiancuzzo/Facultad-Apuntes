@@ -4,7 +4,7 @@ nombre: Disposiciones generales
 num: 1
 previo: "[[Título 5, Propiedad horizontal|Título 5, Propiedad horizontal]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

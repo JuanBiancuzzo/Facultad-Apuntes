@@ -4,7 +4,7 @@ nombre: Atribuciones del Congreso
 num: 4
 previo: "[[Sección - Del poder Legislativo - 1 - Título|Sección - Del poder Legislativo - 1 - Título]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

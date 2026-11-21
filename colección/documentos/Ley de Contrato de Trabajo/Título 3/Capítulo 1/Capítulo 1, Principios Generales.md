@@ -4,7 +4,7 @@ nombre: Principios Generales
 num: 1
 previo: "[[Título 3, De las Modalidades del Contrato de Trabajo|Título 3, De las Modalidades del Contrato de Trabajo]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Capítulo
+  - colección/documentos/Capítulo
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

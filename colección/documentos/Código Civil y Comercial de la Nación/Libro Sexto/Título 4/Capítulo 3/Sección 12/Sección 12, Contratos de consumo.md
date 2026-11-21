@@ -4,7 +4,7 @@ nombre: Contratos de consumo
 num: 12
 previo: "[[Capítulo 3, Parte especial|Capítulo 3, Parte especial]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Sección
+  - colección/documentos/Sección
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

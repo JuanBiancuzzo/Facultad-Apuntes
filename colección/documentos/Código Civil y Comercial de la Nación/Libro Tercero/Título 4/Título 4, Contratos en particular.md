@@ -4,7 +4,7 @@ nombre: Contratos en particular
 num: 4
 previo: "[[Libro 3, Derechos Personales|Libro 3, Derechos Personales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/Título
+  - colección/documentos/Título
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });
