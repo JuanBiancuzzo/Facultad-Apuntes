@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 23
 fecha: 2023-10-23
-descripción: 1er Parcial
+descripción: Parcial
 ejercicios:
   - 731
   - 732

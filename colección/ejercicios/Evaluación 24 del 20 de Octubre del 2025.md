@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 24
 fecha: 2025-10-20
-descripción: 1er Parcial
+descripción: Parcial
 ejercicios:
   - 751
   - 752

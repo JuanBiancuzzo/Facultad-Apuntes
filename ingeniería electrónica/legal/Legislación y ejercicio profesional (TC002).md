@@ -10,6 +10,8 @@ etapa: ampliar
 nombreMateria: Legislación y ejercicio profesional
 nombreReducido: legal
 nombreCarrera: Ingeniería electrónica
+evaluaciones: 
+  - 32
 referencias:
   - 1088
   - 1089
@@ -24,13 +26,18 @@ referencias:
 	await dv.view("_scripts/dataview/contenido/listaAcumulada", { archivo: dv.current() });
 ```
 
+## Resumen
+---
+ 
+
+# Evaluaciones
+---
+```dataviewjs
+	await dv.view("_scripts/dataview/contenido/evaluacionesAcumuladas", { archivo: dv.current() });
+```
+
 # Bibliografía
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/referencia/referenciasArchivo", { archivo: dv.current() });
-```
-
-
-```dataviewjs
-await dv.view("_scripts/dataview/coleccion/articulos/documentos");
 ```

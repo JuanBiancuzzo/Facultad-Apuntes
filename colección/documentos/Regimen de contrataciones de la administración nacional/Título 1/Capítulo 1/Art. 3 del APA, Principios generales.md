@@ -21,7 +21,7 @@ articulo:
         texto: Igualdad de tratamiento para interesados y para oferentes
   - tipo: texto
     texto: Desde el inicio de las actuaciones hasta la finalización de la ejecución del contrato, toda cuestión vinculada con la contratación deberá interpretarse sobre la base de una rigurosa observancia de los principios que anteceden.
-previo: "[[Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 1/Capítulo 1/Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
 tags:
   - carrera/ingeniería-electrónica/legal/articulo
 ---

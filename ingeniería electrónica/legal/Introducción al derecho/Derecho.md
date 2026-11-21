@@ -3,6 +3,9 @@ dia: 2026-02-06
 etapa: empezado
 referencias: []
 aliases:
+  - Fuente de derecho#Fuentes de derecho
+  - Fuente formal de derecho#^formales
+  - Fuente material de derecho#^materiales
   - Abuso de derecho#Abuso del derecho
 tags:
   - carrera/ingeniería-electrónica/legal/Introducción-al-derecho
@@ -37,9 +40,9 @@ Por otro lado, existen dos corrientes del derecho
 ## Fuentes de derecho
 ---
 Según el [[colección/documentos/Código Civil y Comercial de la Nación/Título preliminar/Capítulo 1/Art. 1 del CC y CN, Fuentes y aplicación|Art. 1 del CC y CN]], las fuentes de derecho se pueden dividir en $2$
-* Formales
+* Formales ^formales
     * La [[ingeniería electrónica/legal/Introducción al derecho/Ley|Ley]], [[ingeniería electrónica/legal/Introducción al derecho/Jurisprudencia|jurisprudencia plenaria]] y la costumbres (cuando sea de uso regular de las personas, no opuesta al derecho)
-* Materiales
+* Materiales ^materiales
     * Doctrina, la jurisprudencia en general y los principios jurídicos
 
 ## Abuso del derecho

@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/evaluacion
 numero: 25
 fecha: 2026-05-06
-descripción: 1er Parcial
+descripción: Parcial
 ejercicios:
   - 761
   - 762

@@ -11,7 +11,7 @@ articulo:
         texto: Compraventa, suministros, servicios, locaciones, consultoría, alquileres con opción a compra, permutas, concesiones de uso de los bienes del dominio público y privado del Estado Nacional, que celebren las jurisdicciones y entidades comprendidas en su ámbito de aplicación y a todos aquellos contratos no excluidos expresamente.
       - tipo: texto
         texto: Obras públicas, concesiones de obras públicas, concesiones de servicios públicos y licencias.
-previo: "[[Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 1/Capítulo 1/Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
 tags:
   - carrera/ingeniería-electrónica/legal/articulo
 ---

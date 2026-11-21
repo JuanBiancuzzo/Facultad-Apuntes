@@ -52,7 +52,7 @@ articulo:
     texto: En las contrataciones directas en las que corresponda efectuar invitaciones, de acuerdo con la reglamentación, también serán consideradas las ofertas de quienes no hubiesen sido invitados a participar.
   - tipo: texto
     texto: En los supuestos de contratación previstos en los apartados 2 y 8 del presente inciso, las Universidades Nacionales tendrán el carácter de consultoras preferenciales.
-previo: "[[Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 2/Capítulo 1/Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
 tags:
   - carrera/ingeniería-electrónica/legal/articulo
 ---

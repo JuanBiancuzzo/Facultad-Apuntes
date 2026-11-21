@@ -16,7 +16,7 @@ articulo:
     texto: Con el fin de cumplir el principio de transparencia, se difundirán por INTERNET, en el sitio del Organo Rector, las convocatorias, los proyectos de pliegos correspondientes a contrataciones que la autoridad competente someta a consideración pública, los pliegos de bases y condiciones, el acta de apertura, las adjudicaciones, las órdenes de compra y toda otra información que la reglamentación determine.
   - tipo: texto
     texto: Quedan exceptuadas de la obligación de difusión en todas las etapas del procedimiento, las contrataciones directas encuadradas en el apartado 6 del inciso d) del artículo 25 y de difusión de la convocatoria las de los apartados 5, para los casos de emergencia, y 8.
-previo: "[[Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 2/Capítulo 1/Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
 tags:
   - carrera/ingeniería-electrónica/legal/articulo
 ---
@@ -34,7 +34,7 @@ Todas las convocatorias, cualquiera sea el procedimiento de selección que se ut
 
 Con el fin de cumplir el principio de transparencia, se difundirán por INTERNET, en el sitio del Organo Rector, las convocatorias, los proyectos de pliegos correspondientes a contrataciones que la autoridad competente someta a consideración pública, los pliegos de bases y condiciones, el acta de apertura, las adjudicaciones, las órdenes de compra y toda otra información que la reglamentación determine.
 
-Quedan exceptuadas de la obligación de difusión en todas las etapas del procedimiento, las contrataciones directas encuadradas en el apartado [[Art. 25 del APA, Procedimientos de selección#^5ea6df|6 del inciso d) del artículo 25]] y de difusión de la convocatoria las de los apartados 5, para los casos de emergencia, y 8."
+Quedan exceptuadas de la obligación de difusión en todas las etapas del procedimiento, las contrataciones directas encuadradas en el apartado [[colección/documentos/Regimen de contrataciones de la administración nacional/Título 2/Capítulo 1/Art. 25 del APA, Procedimientos de selección#^5ea6df|6 del inciso d) del artículo 25]] y de difusión de la convocatoria las de los apartados 5, para los casos de emergencia, y 8."
 
 # Interpretación
 ---

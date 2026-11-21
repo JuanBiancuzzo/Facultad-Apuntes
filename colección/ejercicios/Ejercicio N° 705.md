@@ -88,8 +88,8 @@ Para cada uno de los siguientes fragmentos de código, indique si es o no es un 
 
 # Resolución
 ---
-[[colección/ejercicios/Ejercicio N° 705#^parte-1|1.]]
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 705#^parte-1]]
 
-[[colección/ejercicios/Ejercicio N° 705#^parte-2|2.]]
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 705#^parte-2|2.]]
 
-[[colección/ejercicios/Ejercicio N° 705#^parte-3|3.]]
+> [!ejercicio] ![[colección/ejercicios/Ejercicio N° 705#^parte-3|3.]]

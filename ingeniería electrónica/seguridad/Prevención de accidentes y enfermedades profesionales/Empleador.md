@@ -11,7 +11,7 @@ vinculoFacultad:
 ---
 # Definición
 ---
-Es una persona física (unipersonal), una persona Jurídica. Tiene como obligaciones:
+Es una [[Persona física|persona físicia]] (unipersonal), una [[ingeniería electrónica/legal/Introducción al derecho/Persona jurídica|persona Jurídica]]. Tiene como [[ingeniería electrónica/legal/Obligaciones/Obligación|obligación]]
 * Cumplir con las normas de higiene y seguridad en el trabajo
 * Estar afiliado a una [[Aseguradoras de riesgos de trabajo|ART]]
 * Contar con [[Responsable de Higiene]] y [[Seguridad y de medicina laboral]]

@@ -2,7 +2,7 @@
 tipo: Título
 nombre: Disposiciones especiales
 num: 2
-previo: "[[Regimen de contrataciones de la administración nacional|Regimen de contrataciones de la administración nacional]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Regimen de contrataciones de la administración nacional|Regimen de contrataciones de la administración nacional]]"
 tags:
   - carrera/ingeniería-electrónica/legal/Título
 ---

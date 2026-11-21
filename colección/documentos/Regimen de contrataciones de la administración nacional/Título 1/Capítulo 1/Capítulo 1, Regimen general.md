@@ -2,7 +2,7 @@
 tipo: Capítulo
 nombre: Regimen general
 num: 1
-previo: "[[Título 1, Disposiciones comunes|Título 1, Disposiciones comunes]]"
+previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 1/Título 1, Disposiciones comunes|Título 1, Disposiciones comunes]]"
 tags:
   - carrera/ingeniería-electrónica/legal/Capítulo
 ---
