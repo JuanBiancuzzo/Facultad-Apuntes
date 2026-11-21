@@ -8,7 +8,7 @@ articulo:
     texto: En todos los casos es necesaria la conformidad unánime de los miembros de la persona o personas jurídicas, excepto disposición especial o estipulación en contrario del estatuto.
 previo: "[[Parágrafo 2, Funcionamiento|Parágrafo 2, Funcionamiento]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

@@ -8,7 +8,7 @@ articulo:
     texto: El derecho real de uso sólo puede constituirse a favor de persona humana.
 previo: "[[Título 9, Uso|Título 9, Uso]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

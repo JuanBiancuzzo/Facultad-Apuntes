@@ -7,7 +7,7 @@ articulo:
     texto: Las noticias de interés general podrán ser utilizadas, transmitidas o retransmitidas; pero cuando se publiquen en su versión original será necesario expresar la fuente de ellas.
 previo: "[[Parte 3, Disposiciones especiales|Parte 3, Disposiciones especiales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

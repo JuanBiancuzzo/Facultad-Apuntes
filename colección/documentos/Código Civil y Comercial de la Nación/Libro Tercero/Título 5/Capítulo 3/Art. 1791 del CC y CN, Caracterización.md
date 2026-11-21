@@ -8,7 +8,7 @@ articulo:
     texto: El reembolso incluye los intereses, desde la fecha en que el gasto se efectúa.
 previo: "[[Capítulo 3, Empleo útil|Capítulo 3, Empleo útil]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

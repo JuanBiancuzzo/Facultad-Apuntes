@@ -8,7 +8,7 @@ articulo:
     texto: Este Código denomina adolescente a la persona menor de edad que cumplió trece años.
 previo: "[[Sección 2, Persona menor de edad|Sección 2, Persona menor de edad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

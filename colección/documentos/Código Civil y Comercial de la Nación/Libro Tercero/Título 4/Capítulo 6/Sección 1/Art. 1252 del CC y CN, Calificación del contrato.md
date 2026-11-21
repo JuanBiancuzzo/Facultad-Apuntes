@@ -10,7 +10,7 @@ articulo:
     texto: Las disposiciones de este Capítulo se integran con las reglas específicas que resulten aplicables a servicios u obras especialmente regulados.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

@@ -8,7 +8,7 @@ articulo:
     texto: La sociedad unipersonal sólo se podrá constituir como sociedad anónima. La sociedad unipersonal no puede constituirse por una sociedad unipersonal.
 previo: "[[colección/documentos/Ley General de Sociedades/Capítulo 1/Sección 1/Sección 1, De la existencia de sociedad|Sección 1, De la existencia de sociedad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

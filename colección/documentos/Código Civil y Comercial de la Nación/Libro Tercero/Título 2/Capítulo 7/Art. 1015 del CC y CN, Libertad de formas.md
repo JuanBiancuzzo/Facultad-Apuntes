@@ -6,7 +6,7 @@ articulo:
     texto: Sólo son formales los contratos a los cuales la ley les impone una forma determinada.
 previo: "[[Capítulo 7, Forma|Capítulo 7, Forma]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

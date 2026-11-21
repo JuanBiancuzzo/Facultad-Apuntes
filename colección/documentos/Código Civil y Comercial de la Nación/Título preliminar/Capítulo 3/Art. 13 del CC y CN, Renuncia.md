@@ -6,7 +6,7 @@ articulo:
     texto: Está prohibida la renuncia general de las leyes. Los efectos de la ley pueden ser renunciados en el caso particular, excepto que el ordenamiento jurídico lo prohíba.
 previo: "[[Capítulo 3, Ejercicio de los derechos|Capítulo 3, Ejercicio de los derechos]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

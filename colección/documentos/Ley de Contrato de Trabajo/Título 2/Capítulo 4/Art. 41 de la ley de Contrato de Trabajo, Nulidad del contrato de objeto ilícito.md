@@ -6,7 +6,7 @@ articulo:
     texto: El contrato de objeto ilícito no produce consecuencias entre las partes que se deriven de esta ley.
 previo: "[[Capítulo 4, Del objeto del contrato de trabajo|Capítulo 4, Del objeto del contrato de trabajo]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

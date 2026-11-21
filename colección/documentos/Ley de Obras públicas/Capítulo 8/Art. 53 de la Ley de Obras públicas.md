@@ -18,7 +18,7 @@ articulo:
         texto: Cuando la administración no efectúe la entrega de los terrenos ni realice el replanteo de la obra dentro del plazo fijado en los pliegos especiales más una tolerancia de treinta días.
 previo: "[[Capítulo 8, De la rescisión del contrato|Capítulo 8, De la rescisión del contrato]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

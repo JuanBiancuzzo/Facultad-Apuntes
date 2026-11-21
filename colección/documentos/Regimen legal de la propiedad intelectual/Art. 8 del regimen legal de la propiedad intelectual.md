@@ -5,7 +5,7 @@ articulo:
     texto: La propiedad intelectual de las obras anónimas pertenecientes a instituciones, corporaciones o personas jurídicas, durará cincuenta años contados desde su publicación.
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

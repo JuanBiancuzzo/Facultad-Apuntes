@@ -5,7 +5,7 @@ articulo:
     texto: La propiedad intelectual se regirá por las disposiciones del derecho común, bajo las condiciones y limitaciones establecidas en la presente Ley.
 previo: "[[Regimen legal de la propiedad intelectual|Regimen legal de la propiedad intelectual]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

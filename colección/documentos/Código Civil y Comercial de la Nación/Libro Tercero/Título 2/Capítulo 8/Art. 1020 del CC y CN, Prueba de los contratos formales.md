@@ -8,7 +8,7 @@ articulo:
     texto: Se considera principio de prueba instrumental cualquier instrumento que emane de la otra parte, de su causante o de parte interesada en el asunto, que haga verosímil la existencia del contrato.
 previo: "[[Capítulo 8, Prueba|Capítulo 8, Prueba]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

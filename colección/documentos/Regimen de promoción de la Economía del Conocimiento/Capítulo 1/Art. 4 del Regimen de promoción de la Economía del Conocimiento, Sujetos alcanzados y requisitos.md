@@ -6,7 +6,7 @@ articulo:
     texto: Sujetos alcanzados y requisitos. Podrán acceder a los beneficios del presente Régimen de Promoción de la Economía del Conocimiento las personas jurídicas comprendidas en el inciso a) del artículo 49 de la Ley de Impuesto a las Ganancias, texto ordenado en 1997 y sus modificaciones, constituidas en la República Argentina o habilitadas para actuar dentro de su territorio, que desarrollen en el país, por cuenta propia y como actividad principal, alguna de las actividades mencionadas en el artículo 2° de la presente ley, se encuentren inscriptas en el Registro Nacional de Beneficiarios del Régimen de Promoción de la Economía del Conocimiento y reúnan al menos dos (2) de los siguientes requisitos, en los términos y condiciones en que lo determine la reglamentación
 previo: "[[colección/documentos/Regimen de promoción de la Economía del Conocimiento/Capítulo 1/Capítulo 1, Lineamientos generales del régimen]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

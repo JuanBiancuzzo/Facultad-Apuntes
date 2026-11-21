@@ -19,7 +19,7 @@ articulo:
         texto: ejecutar la obra o el servicio en el tiempo convenido o, en su defecto, en el que razonablemente corresponda según su índole.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

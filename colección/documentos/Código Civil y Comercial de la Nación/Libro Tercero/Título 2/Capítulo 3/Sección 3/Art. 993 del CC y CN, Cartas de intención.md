@@ -6,7 +6,7 @@ articulo:
     texto: Los instrumentos mediante los cuales una parte, o todas ellas, expresan un consentimiento para negociar sobre ciertas bases, limitado a cuestiones relativas a un futuro contrato, son de interpretación restrictiva. Sólo tienen la fuerza obligatoria de la oferta si cumplen sus requisitos.
 previo: "[[Sección 3, Tratativas contractuales|Sección 3, Tratativas contractuales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

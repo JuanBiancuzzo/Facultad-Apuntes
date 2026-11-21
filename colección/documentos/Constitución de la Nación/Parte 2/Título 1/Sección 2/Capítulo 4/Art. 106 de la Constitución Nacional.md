@@ -5,7 +5,7 @@ articulo:
     texto: Pueden los ministros concurrir a las sesiones del Congreso y tomar parte en sus debates, pero no votar.
 previo: "[[Capítulo 4, Del jefe de gabinete y demás ministros del Poder Ejecutivo|Capítulo 4, Del jefe de gabinete y demás ministros del Poder Ejecutivo]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

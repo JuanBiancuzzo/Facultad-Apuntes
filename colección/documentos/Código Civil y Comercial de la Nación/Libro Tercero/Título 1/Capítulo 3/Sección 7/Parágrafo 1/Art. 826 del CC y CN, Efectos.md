@@ -6,7 +6,7 @@ articulo:
     texto: Los efectos de la obligación simplemente mancomunada se rigen por lo dispuesto en la Sección 6a de este Capítulo, según que su objeto sea divisible o indivisible.
 previo: "[[Parágrafo 1, Obligaciones simplemente mancomunadas|Parágrafo 1, Obligaciones simplemente mancomunadas]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

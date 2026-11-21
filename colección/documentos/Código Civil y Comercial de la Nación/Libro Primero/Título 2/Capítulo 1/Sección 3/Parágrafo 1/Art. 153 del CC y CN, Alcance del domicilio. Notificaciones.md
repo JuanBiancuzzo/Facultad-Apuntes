@@ -6,7 +6,7 @@ articulo:
     texto: Se tienen por válidas y vinculantes para la persona jurídica todas las notificaciones efectuadas en la sede inscripta.
 previo: "[[Parágrafo 1, Atributos y efectos de la personalidad jurídica|Parágrafo 1, Atributos y efectos de la personalidad jurídica]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

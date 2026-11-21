@@ -6,7 +6,7 @@ articulo:
     texto: Las personas son titulares de los derechos individuales sobre los bienes que integran su patrimonio conforme con lo que se establece en este Código.
 previo: "[[Capítulo 4, Derechos y bienes|Capítulo 4, Derechos y bienes]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

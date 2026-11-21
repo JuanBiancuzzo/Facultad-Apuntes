@@ -12,7 +12,7 @@ articulo:
     texto: La autoridad de aplicación podrá establecer, por resolución fundada, un límite porcentual distinto para las deducciones, retenciones o compensaciones cuando la situación particular lo requiera.
 previo: "[[Capítulo 4, De la tutela y pago de la remuneración|Capítulo 4, De la tutela y pago de la remuneración]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

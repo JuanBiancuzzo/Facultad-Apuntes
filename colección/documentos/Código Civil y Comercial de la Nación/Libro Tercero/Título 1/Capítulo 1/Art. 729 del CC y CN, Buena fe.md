@@ -6,7 +6,7 @@ articulo:
     texto: Deudor y acreedor deben obrar con cuidado, previsión y según las exigencias de la buena fe.
 previo: "[[Capítulo 1 - Disposiciones generales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

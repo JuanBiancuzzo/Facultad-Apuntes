@@ -6,7 +6,7 @@ articulo:
     texto: Cualquier acción u omisión que causa un daño a otro es antijurídica si no está justificada.
 previo: "[[Sección 3, Función resarcitoria|Sección 3, Función resarcitoria]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

@@ -11,7 +11,7 @@ articulo:
     texto: Las cesiones totales o parciales de derechos temporales o espaciales de explotación de películas cinematográficas sólo serán oponibles a terceros a partir del momento de su inscripción en el Registro Nacional de Propiedad Intelectual.
 previo: "[[Parte 3, Disposiciones especiales|Parte 3, Disposiciones especiales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

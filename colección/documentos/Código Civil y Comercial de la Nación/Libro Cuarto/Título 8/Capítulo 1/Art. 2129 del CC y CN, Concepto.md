@@ -8,7 +8,7 @@ articulo:
     texto: Hay alteración de la sustancia, si es una cosa, cuando se modifica su materia, forma o destino, y si se trata de un derecho, cuando se lo menoscaba.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 8/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

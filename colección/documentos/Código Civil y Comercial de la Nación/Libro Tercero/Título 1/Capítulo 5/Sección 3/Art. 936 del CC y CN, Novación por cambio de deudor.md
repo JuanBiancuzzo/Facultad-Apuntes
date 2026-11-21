@@ -6,7 +6,7 @@ articulo:
     texto: La novación por cambio de deudor requiere el consentimiento del acreedor.
 previo: "[[Sección 3, Novación|Sección 3, Novación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

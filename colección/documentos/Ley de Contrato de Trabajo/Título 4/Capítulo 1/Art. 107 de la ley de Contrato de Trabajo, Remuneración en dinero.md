@@ -8,7 +8,7 @@ articulo:
     texto: El empleador no podrá imputar los pagos en especies a más del veinte (20) por ciento del total de la remuneración.
 previo: "[[Capítulo 1, Del sueldo o salario en general|Capítulo 1, Del sueldo o salario en general]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

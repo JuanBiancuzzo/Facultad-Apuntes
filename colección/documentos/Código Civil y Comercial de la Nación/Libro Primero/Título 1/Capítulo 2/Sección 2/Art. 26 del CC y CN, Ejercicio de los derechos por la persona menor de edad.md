@@ -16,7 +16,7 @@ articulo:
     texto: A partir de los dieciséis años el adolescente es considerado como un adulto para las decisiones atinentes al cuidado de su propio cuerpo.
 previo: "[[Sección 2, Persona menor de edad|Sección 2, Persona menor de edad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

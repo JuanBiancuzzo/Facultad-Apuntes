@@ -10,7 +10,7 @@ articulo:
     texto: El consentimiento para los actos no comprendidos en la prohibición establecida en el primer párrafo no puede ser suplido, y es libremente revocable.
 previo: "[[Capítulo 3, Derechos y actos personalísimos|Capítulo 3, Derechos y actos personalísimos]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

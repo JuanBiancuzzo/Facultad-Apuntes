@@ -13,7 +13,7 @@ articulo:
         texto: Obras públicas, concesiones de obras públicas, concesiones de servicios públicos y licencias.
 previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 1/Capítulo 1/Capítulo 1, Regimen general|Capítulo 1, Regimen general]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

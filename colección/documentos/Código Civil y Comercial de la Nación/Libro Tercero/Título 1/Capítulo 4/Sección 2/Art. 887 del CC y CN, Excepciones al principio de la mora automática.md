@@ -14,7 +14,7 @@ articulo:
     texto: En caso de duda respecto a si el plazo es tácito o indeterminado propiamente dicho, se considera que es tácito.
 previo: "[[Sección 2, Mora|Sección 2, Mora]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

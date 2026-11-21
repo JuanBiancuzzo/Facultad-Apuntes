@@ -8,7 +8,7 @@ articulo:
     texto: Los jueces pueden reducir las penas cuando su monto desproporcionado con la gravedad de la falta que sancionan, habida cuenta del valor de las prestaciones y demás circunstancias del caso, configuran un abusivo aprovechamiento de la situación del deudor.
 previo: "[[Sección 5, Obligaciones con cláusula penal y sanciones conminatorias|Sección 5, Obligaciones con cláusula penal y sanciones conminatorias]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

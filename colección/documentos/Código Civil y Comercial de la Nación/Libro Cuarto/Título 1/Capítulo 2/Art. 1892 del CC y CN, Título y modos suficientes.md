@@ -18,7 +18,7 @@ articulo:
     texto: A la adquisición por causa de muerte se le aplican las disposiciones del Libro Quinto.
 previo: "[[Capítulo 2, Adquisición, transmisión, extinción y oponibilidad|Capítulo 2, Adquisición, transmisión, extinción y oponibilidad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

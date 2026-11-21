@@ -27,7 +27,7 @@ articulo:
             texto: La licitación o el concurso serán internacionales cuando, por las características del objeto o la complejidad de la prestación, la convocatoria se extienda a interesados y oferentes del exterior; revistiendo tal carácter aquéllos cuya sede principal principal de sus negocios se encuentre en el extranjero, y no tengan sucursal debidamente registrada en el país.
 previo: "[[colección/documentos/Regimen de contrataciones de la administración nacional/Título 2/Capítulo 1/Capítulo 1, Contrataciones de bienes y servicios|Capítulo 1, Contrataciones de bienes y servicios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

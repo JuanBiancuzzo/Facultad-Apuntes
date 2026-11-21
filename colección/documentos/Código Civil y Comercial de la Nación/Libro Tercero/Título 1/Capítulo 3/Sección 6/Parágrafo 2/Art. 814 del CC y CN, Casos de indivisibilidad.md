@@ -15,7 +15,7 @@ articulo:
         texto: si lo dispone la ley.
 previo: "[[Parágrafo 2, Obligaciones indivisibles|Parágrafo 2, Obligaciones indivisibles]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

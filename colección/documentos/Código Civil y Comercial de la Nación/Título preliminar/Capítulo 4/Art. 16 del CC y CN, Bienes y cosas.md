@@ -6,7 +6,7 @@ articulo:
     texto: Los derechos referidos en el primer párrafo del artículo 15 pueden recaer sobre bienes susceptibles de valor económico. Los bienes materiales se llaman cosas. Las disposiciones referentes a las cosas son aplicables a la energía y a la fuerzas naturales susceptibles de ser puestas al servicio del hombre.
 previo: "[[Capítulo 4, Derechos y bienes|Capítulo 4, Derechos y bienes]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

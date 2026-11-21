@@ -8,7 +8,7 @@ articulo:
     texto: Los subadquirentes no pueden ampararse en su buena fe y título oneroso si el acto se ha realizado sin intervención del titular del derecho.
 previo: "[[Sección 4, Efectos de la nulidad|Sección 4, Efectos de la nulidad]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

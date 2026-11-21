@@ -17,7 +17,7 @@ articulo:
         texto: la opción que hagan por alguno de los regímenes patrimoniales previstos en este Código.
 previo: "[[Sección 1, Convenciones matrimoniales|Sección 1, Convenciones matrimoniales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

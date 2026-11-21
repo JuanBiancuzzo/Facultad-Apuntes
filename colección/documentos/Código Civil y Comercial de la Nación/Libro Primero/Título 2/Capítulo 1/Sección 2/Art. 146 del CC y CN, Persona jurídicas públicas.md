@@ -15,7 +15,7 @@ articulo:
         texto: la Iglesia Católica.
 previo: "[[Sección 2, Clasificación|Sección 2, Clasificación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

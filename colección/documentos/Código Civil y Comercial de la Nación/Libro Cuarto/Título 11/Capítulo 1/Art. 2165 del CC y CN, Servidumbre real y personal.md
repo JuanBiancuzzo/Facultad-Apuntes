@@ -10,7 +10,7 @@ articulo:
     texto: En caso de duda, la servidumbre se presume personal.
 previo: "[[colección/documentos/Código Civil y Comercial de la Nación/Libro Cuarto/Título 11/Capítulo 1/Capítulo 1, Disposiciones generales|Capítulo 1, Disposiciones generales]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

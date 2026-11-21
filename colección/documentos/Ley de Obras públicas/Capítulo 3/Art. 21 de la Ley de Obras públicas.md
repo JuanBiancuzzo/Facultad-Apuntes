@@ -9,7 +9,7 @@ articulo:
     texto: Formarán parte del contrato que se subscriba las bases de licitación, el pliego de condiciones, las especificaciones técnicas y demás documentos de la licitación.
 previo: "[[Capítulo 3, De la formalización del contrato|Capítulo 3, De la formalización del contrato]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

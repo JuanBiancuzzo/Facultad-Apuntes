@@ -22,7 +22,7 @@ articulo:
     texto: En el caso del inciso d) del artículo 53, no será de aplicación el inciso e) del presente artículo.
 previo: "[[Capítulo 8, De la rescisión del contrato|Capítulo 8, De la rescisión del contrato]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

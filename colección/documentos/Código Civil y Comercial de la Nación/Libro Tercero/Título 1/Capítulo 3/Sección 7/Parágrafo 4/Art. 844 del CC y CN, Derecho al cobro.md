@@ -6,7 +6,7 @@ articulo:
     texto: El acreedor, o cada acreedor, o todos ellos conjuntamente, pueden reclamar al deudor la totalidad de la obligación.
 previo: "[[Parágrafo 4, Solidaridad activa|Parágrafo 4, Solidaridad activa]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

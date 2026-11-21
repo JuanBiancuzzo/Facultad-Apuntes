@@ -6,7 +6,7 @@ articulo:
     texto: Pueden constituir hipoteca los titulares de los derechos reales de dominio, condominio, propiedad horizontal, conjuntos inmobiliarios y superficie.
 previo: "[[Capítulo 2, Hipoteca|Capítulo 2, Hipoteca]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

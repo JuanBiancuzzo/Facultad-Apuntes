@@ -15,7 +15,7 @@ articulo:
         texto: recibir la obra si fue ejecutada conforme a lo dispuesto en el artículo 1256.
 previo: "[[Sección 1, Disposiciones comunes a las obras y a los servicios|Sección 1, Disposiciones comunes a las obras y a los servicios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

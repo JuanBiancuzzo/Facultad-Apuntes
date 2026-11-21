@@ -16,7 +16,7 @@ articulo:
     texto: Las personas jurídicas privadas que se constituyen en el extranjero se rigen por lo dispuesto en la ley general de sociedades.
 previo: "[[Sección 2, Clasificación|Sección 2, Clasificación]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

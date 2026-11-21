@@ -15,7 +15,7 @@ articulo:
         texto: para estimar el valor de las restituciones del acreedor se toman en cuenta las ventajas que resulten o puedan resultar de no haber efectuado la propia prestación, su utilidad frustrada y, en su caso, otros daños.
 previo: "[[Capítulo 13, Extinción modificación y adecuación del contrato|Capítulo 13, Extinción modificación y adecuación del contrato]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

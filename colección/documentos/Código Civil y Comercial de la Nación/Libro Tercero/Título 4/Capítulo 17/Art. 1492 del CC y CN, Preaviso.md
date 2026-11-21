@@ -14,7 +14,7 @@ articulo:
     texto: Las partes pueden prever los plazos de preaviso superiores a los establecidos en este artículo.
 previo: "[[Capítulo 17, Agencia|Capítulo 17, Agencia]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

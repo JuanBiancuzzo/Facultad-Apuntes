@@ -15,7 +15,7 @@ articulo:
         texto: sea abusiva, discriminatoria o induzca al consumidor a comportarse de forma perjudicial o peligrosa para su salud o seguridad.
 previo: "[[Sección 2, Información y publicidad dirigida a los consumidores|Sección 2, Información y publicidad dirigida a los consumidores]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

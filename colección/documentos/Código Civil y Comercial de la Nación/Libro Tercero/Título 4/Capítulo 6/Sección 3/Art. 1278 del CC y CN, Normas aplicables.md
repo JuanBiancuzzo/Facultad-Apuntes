@@ -6,7 +6,7 @@ articulo:
     texto: Resultan aplicables a los servicios las normas de la Sección 1ª de este Capítulo y las correspondientes a las obligaciones de hacer.
 previo: "[[Sección 3, Normas especiales para los servicios|Sección 3, Normas especiales para los servicios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

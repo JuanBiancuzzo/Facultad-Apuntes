@@ -16,7 +16,7 @@ articulo:
         texto: Servir de centro que armonice los esfuerzos de las naciones para alcanzar estos propósitos comunes.
 previo: "[[Capítulo 1, Propósitos y principios|Capítulo 1, Propósitos y principios]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---

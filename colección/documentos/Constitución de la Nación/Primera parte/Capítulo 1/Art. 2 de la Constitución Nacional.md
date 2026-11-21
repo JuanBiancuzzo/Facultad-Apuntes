@@ -5,7 +5,7 @@ articulo:
     texto: El Gobierno federal sostiene el culto católico apostólico romano.
 previo: "[[Capítulo 1, Declaraciones derechos y garantías|Capítulo 1, Declaraciones derechos y garantías]]"
 tags:
-  - carrera/ingeniería-electrónica/legal/articulo
+  - colección/documentos/articulo
 ---
 # Artículo
 ---
