@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 808
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -38,3 +38,4 @@ Las empresas que se encuentran inscriptas en el Registro de Economía del Conoci
 
 # Resultado
 ---
+El [[colección/ejercicios/Ejercicio N° 808#^parte-5|punto 5]] es el correcto

@@ -8,6 +8,7 @@ tags:
   - colección/documentos/documento
 aliases:
   - Ley 20.744
+  - LCT
 ---
 ```dataviewjs
 	await dv.view("_scripts/dataview/coleccion/articulos/subSecciones", { paginaActual: dv.current() });

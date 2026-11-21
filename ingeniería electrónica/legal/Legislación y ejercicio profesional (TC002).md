@@ -12,6 +12,7 @@ nombreReducido: legal
 nombreCarrera: Ingeniería electrónica
 evaluaciones: 
   - 32
+  - 33
 referencias:
   - 1088
   - 1089

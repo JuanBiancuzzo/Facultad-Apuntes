@@ -3,6 +3,7 @@ dia: 2026-02-07
 etapa: empezado
 referencias: []
 aliases:
+  - Clasificación de contratos#Clasificación
   - Contrato paritario#^contrato-paritorio
   - Contrato por adhesión#^contrato-de-adhesion
   - Contrato de consumo#^contrato-de-consudo
@@ -27,6 +28,8 @@ aliases:
   - Contrato consensual#^contrato-consensual
   - Contrato real#^contrato-real
   - Cláusulas abusivas de un contrato#^clausula-abusiva
+ejercicios:
+  - 820
 tags:
   - carrera/ingeniería-electrónica/legal/Contratos
   - nota/facultad

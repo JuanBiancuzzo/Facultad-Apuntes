@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 807
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -34,3 +34,4 @@ Para la existencia y vigencia en [[República Argentina|Argentina]] de un régim
 
 # Resultado
 ---
+El [[colección/ejercicios/Ejercicio N° 807#^parte-4|punto 4]] es la correcta

@@ -4,7 +4,7 @@ tags:
   - colección/ejercicios/ejercicio
   - nota/colección
 numero: 809
-etapa: empezado
+etapa: ampliar
 ---
 # Enunciado
 ---
@@ -42,3 +42,4 @@ Más allá de cumplir con la revalidación bianual, el [[colección/documentos/R
 
 # Resultado
 ---
+El [[colección/ejercicios/Ejercicio N° 809#^parte-6|punto 6]] es el correcto
